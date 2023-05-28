@@ -17,6 +17,7 @@ const mealList = [
         price: 15.99,
         img: beef,
         desc: `Beef burger very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 2,
@@ -25,6 +26,7 @@ const mealList = [
         price: 13.99,
         img: chickenBurger,
         desc: `Chicken burger very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 3,
@@ -33,6 +35,7 @@ const mealList = [
         price: 13.99,
         img: fishBurger,
         desc: `Fish burger very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 4,
@@ -41,6 +44,7 @@ const mealList = [
         price: 20.99,
         img: chickenpizza,
         desc: `Chicken pizza very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 5,
@@ -49,6 +53,7 @@ const mealList = [
         price: 20.99,
         img: fishPizza,
         desc: `Fish pizza very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 6,
@@ -57,6 +62,7 @@ const mealList = [
         price: 20.99,
         img: pizzabackground,
         desc: `Pizza very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 7,
@@ -65,6 +71,7 @@ const mealList = [
         price: 20.99,
         img: meetBurger,
         desc: `meet Burger very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 8,
@@ -73,6 +80,7 @@ const mealList = [
         price: 10.99,
         img: cupcake,
         desc: `Cup Cake very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 9,
@@ -81,6 +89,7 @@ const mealList = [
         price: 10.99,
         img: cake,
         desc: `Chocolate Cake very cooked and delicious`,
+        amount: 1,
     },
     {
         id: 10,
@@ -89,6 +98,7 @@ const mealList = [
         price: 10.99,
         img: strawberyCake,
         desc: `Strawberry Cake very cooked and delicious`,
+        amount: 1,
     },
 ]
 

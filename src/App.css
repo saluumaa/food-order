@@ -231,3 +231,49 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.close-btn {
+  position: fixed;
+  top: 7rem;
+  right: 0;
+  color: #4e6820;
+  border: none;
+  background: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cart-wrapper {
+  margin: 9rem 10px 10px 10px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.up-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container button {
+  margin: 0 0.1rem;
+  background: none;
+  font-size: 1.4rem;
+  color: white;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.cart-container img {
+  width: 40%;
+  height: 10rem;
+  border-radius: 10px 10px 0 0;
+}

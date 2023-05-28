@@ -37,7 +37,9 @@ function App() {
         <Route path="/meals" element={<Meals handleAddCart={handleAddCart} />} />
         <Route path="/about" element={<About />} />
       </Routes>:
-      <Cart cart={cart} setCart={setCart} setShow={setShow}/>
+      <Cart cart={cart} setCart={setCart} setShow={setShow} 
+        countItems={cart.length}
+      />
       }
       {exist && <div className='Existence'>Item already in cart</div>}
       <Footer />
