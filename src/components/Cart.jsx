@@ -7,7 +7,7 @@ const Cart = (
 {cart,
 setCart,
 setShow,
-countItems,
+setCheck
 }) => {
   const [totalPrice, setTotalPrice] = useState(0);
 
@@ -34,7 +34,7 @@ countItems,
 
   useEffect(()=> {
     handlePrice()
-  }, [cart])
+  }, [cart, handlePrice])
 
   return (
     <>
@@ -45,13 +45,13 @@ countItems,
           <FaTimes />
         </button>
       </div>
-    <div className='cart-wrapper'>
+    <aside className='cart-wrapper'>
       {cart?.map((item) => (
         <div key={item.id} class="cart-container">
           <img src={item.img} alt={item.title} />
           <div>
           <h3>{item.title}</h3>
-          <h3 style={{backgroundColor: 'blue', color: 'white' }}>${item.price}</h3>
+          <h3 style={{backgroundColor: 'blue', color: 'white', width: '50%' }}>${item.price}</h3>
         </div>
          <div className="up-down-btn">
           <button onClick={() => handleCount(item.id, '+')}>+</button>
@@ -68,12 +68,14 @@ countItems,
           </div>
         </div>
         ))};
-    </div>
+    </aside>
 
     <div className="cart-footer">
         <span>The total price of your food is </span>
       <h3> $- {totalPrice} </h3>
-      <button className="btn">Checkout</button>
+      <button className="btn"
+      onClick={()=> {setCheck(true)}}
+      >Checkout</button>
     </div>
     </>
   )

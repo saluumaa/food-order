@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({
   countItems,
-  setShow
+  setShow,
+  setCheck,
 }) => {
   return (
     <>
@@ -28,7 +29,7 @@ const Navbar = ({
         onClick={() => setShow(true)}
         >Xared Restaurent</p>
         <nav 
-        onClick={() => setShow(true)}
+        onClick={() => {setShow(true); setCheck(false)}}
         >
             <ul>
                 <li><Link to="/"> Home </Link></li>
